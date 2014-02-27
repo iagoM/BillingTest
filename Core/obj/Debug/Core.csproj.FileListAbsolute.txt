@@ -1,5 +1,0 @@
-C:\git\Billing\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
-C:\git\Billing\Core\bin\Debug\Vtex.Billing.Core.dll
-C:\git\Billing\Core\bin\Debug\Vtex.Billing.Core.pdb
-C:\git\Billing\Core\obj\Debug\Vtex.Billing.Core.dll
-C:\git\Billing\Core\obj\Debug\Vtex.Billing.Core.pdb
