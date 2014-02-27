@@ -1,0 +1,8 @@
+C:\git\Billing\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\git\Billing\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\git\Billing\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\git\Billing\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\git\Billing\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\git\Billing\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\git\Billing\ConsoleApplication\bin\Debug\Vtex.Billing.Core.dll
+C:\git\Billing\ConsoleApplication\bin\Debug\Vtex.Billing.Core.pdb
