@@ -36,7 +36,7 @@ namespace Vtex.Billing.Core.Books
             UnchargeableRules();
         }
 
-        //public void insertAccount(string accountName)
+        //public void insertAccount(string accountName) aa
         //{
         //    throw new ArgumentException();
         //}
