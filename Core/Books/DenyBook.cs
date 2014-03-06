@@ -1,35 +1,56 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Vtex.Billing.Core.Books
 {
-    class DenyBook
+    public class DenyBook
     {
-        private List<string> deniedList
+        private List<string> deniedList;
+
+        public List<string> DeniedList
         {
-            get;
-            private set;
+            get{ return deniedList;}
+
+            private set { deniedList = value; }
+        }
+
+        private void UnchargeableRules()
+        {
+            deniedList.Add("automacaoqa");
+            deniedList.Add("basedevmkp");
+            deniedList.Add("walmartv5");
+            deniedList.Add("ambienteqa");
+            deniedList.Add("personalhomolog");
+            deniedList.Add("vtexbeta");
+            deniedList.Add("walteste");
         }
 
 
-        public void insertAccount(string accountName)
+        public DenyBook()
         {
-            throw new ArgumentException();
+            this.DeniedList = new List<string>();
+            UnchargeableRules();
         }
 
+        //public void insertAccount(string accountName)
+        //{
+        //    throw new ArgumentException();
+        //}
 
-        public void removeAccount(string accountName)
-        {
-            throw new ArgumentException();
-        }
 
-        public Boolean findAccount(string accountName)
-        {
-            throw new ArgumentException();
-        }
+        //public void removeAccount(string accountName)
+        //{
+        //    throw new ArgumentException();
+        //}
+
+        //public Boolean findAccount(string accountName)
+        //{
+        //    throw new ArgumentException();
+        //}
 
     }
 }

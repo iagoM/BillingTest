@@ -9,3 +9,11 @@ C:\git\Billing\ConsoleApplication\bin\Debug\Vtex.Billing.Core.pdb
 C:\Users\VTEX\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
 C:\Users\VTEX\Documents\GitHub\BillingTest\ConsoleApplication\obj\Debug\ConsoleApplication.exe
 C:\Users\VTEX\Documents\GitHub\BillingTest\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\Vtex.Billing.Core.dll
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\Vtex.Billing.Core.pdb
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache

@@ -40,11 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Books\DenyBook.cs" />
+    <Compile Include="Data\BillingAccountManager.cs" />
     <Compile Include="Data\OMSData.cs" />
     <Compile Include="Interfaces\IOMSData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

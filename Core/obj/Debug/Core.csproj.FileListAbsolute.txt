@@ -3,3 +3,8 @@ C:\git\Billing\Core\bin\Debug\Vtex.Billing.Core.dll
 C:\git\Billing\Core\bin\Debug\Vtex.Billing.Core.pdb
 C:\git\Billing\Core\obj\Debug\Vtex.Billing.Core.dll
 C:\git\Billing\Core\obj\Debug\Vtex.Billing.Core.pdb
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\obj\Debug\Vtex.Billing.Core.dll
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\obj\Debug\Vtex.Billing.Core.pdb
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\Vtex.Billing.Core.dll
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\Vtex.Billing.Core.pdb
