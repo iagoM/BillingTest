@@ -17,3 +17,5 @@ C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\Con
 C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\Vtex.Billing.Core.dll
 C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\Vtex.Billing.Core.pdb
 C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\Newtonsoft.Json.dll
+C:\Users\igMoreira\Documents\GitHub\BillingTest\ConsoleApplication\bin\Debug\Newtonsoft.Json.xml

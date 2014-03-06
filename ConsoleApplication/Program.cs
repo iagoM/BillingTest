@@ -11,7 +11,9 @@ namespace ConsoleApplication
             //OMSData data = new OMSData(Guid.NewGuid(), 10);
             //string s = data.AccountName
 
-            TestDenyBook();
+            //TestDenyBook();
+
+            TestBillingAccountManager();
 
         }
 
@@ -24,6 +26,22 @@ namespace ConsoleApplication
             {
                 Console.WriteLine(item.ToString());
             }
+
+            Console.ReadLine();
+
+        }
+
+        static void TestBillingAccountManager()
+        {
+
+            BillingAccountManager teste = BillingAccountManager.Instance;
+
+            teste.Warmup();
+
+            //foreach (string item in teste.DeniedList)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
 
             Console.ReadLine();
 

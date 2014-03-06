@@ -9,13 +9,19 @@ namespace Vtex.Billing.Core.Books
 {
     public class DenyBook
     {
-        private List<string> deniedList;
+        private ConcurrentBag<string> deniedList;
 
-        public List<string> DeniedList
+        public ConcurrentBag<string> DeniedList
         {
             get{ return deniedList;}
 
             private set { deniedList = value; }
+        }
+
+        public DenyBook()
+        {
+            this.DeniedList = new ConcurrentBag<string>();
+            UnchargeableRules();
         }
 
         private void UnchargeableRules()
@@ -28,14 +34,5 @@ namespace Vtex.Billing.Core.Books
             deniedList.Add("vtexbeta");
             deniedList.Add("walteste");
         }
-
-
-        public DenyBook()
-        {
-            this.DeniedList = new List<string>();
-            UnchargeableRules();
-        }
-
-
     }
 }

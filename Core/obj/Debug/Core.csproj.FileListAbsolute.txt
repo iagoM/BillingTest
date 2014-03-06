@@ -8,3 +8,7 @@ C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\obj\Debug\Vtex.Billing.Core
 C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\obj\Debug\Vtex.Billing.Core.pdb
 C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\Vtex.Billing.Core.dll
 C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\Vtex.Billing.Core.pdb
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\igMoreira\Documents\GitHub\BillingTest\Core\bin\Debug\System.Net.Http.Formatting.xml

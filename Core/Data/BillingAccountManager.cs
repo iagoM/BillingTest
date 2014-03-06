@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Vtex.Billing.Core.Books;
 
 namespace Vtex.Billing.Core.Data
 {
@@ -34,7 +35,7 @@ namespace Vtex.Billing.Core.Data
 
 		public static readonly BillingAccountManager Instance = new BillingAccountManager();
 
-		public BindingList<BillingAccountSummary> Summary = new BindingList<BillingAccountSummary>();
+        //TODO: public BindingList<BillingAccountSummary> Summary = new BindingList<BillingAccountSummary>();
 
 		private ConcurrentDictionary<string, LicenseManagerDatum> LicenseManagerData = new ConcurrentDictionary<string, LicenseManagerDatum>();
 		private ConcurrentBag<string> UnchargeableAccounts = new ConcurrentBag<string>();
@@ -66,12 +67,34 @@ namespace Vtex.Billing.Core.Data
 				{
 					LicenseManagerDatum datum = new LicenseManagerDatum(token);
 					LicenseManagerData.AddOrUpdate(datum.Id, datum, (k, v) => v);
+                    
 				});
 		}
 
 		private void WarmupUnchargeableAccounts()
 		{
 			//TODO: Buscar a lista de contas que nao devem ser cobradas
+
+            throw new NotImplementedException();
+
+            this.UnchargeableAccounts = new DenyBook().DeniedList;
+
+
+            List<LicenseManagerDatum> teste = LicenseManagerData.ToList<LicenseManagerDatum>();
+
+            foreach (var datum in LicenseManagerData)
+            {
+                
+
+                if ( ! this.IsValidAccount(datum.Value ) )
+                {
+                    LicenseManagerData.TryRemove(datum.Key,  );
+                }
+                else
+                {
+                }
+
+            }
 
 		}
 
