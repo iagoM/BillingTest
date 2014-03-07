@@ -50,7 +50,7 @@ namespace Vtex.Billing.Core.Data
 		public void Warmup()
 		{
 			WarmupLicenseManager();
-			WarmupUnchargeableAccounts();
+            WarmupUnchargeableAccounts();
 		}
 
 		private void WarmupLicenseManager()
@@ -75,23 +75,15 @@ namespace Vtex.Billing.Core.Data
 		{
 			//TODO: Buscar a lista de contas que nao devem ser cobradas
 
-            throw new NotImplementedException();
-
             this.UnchargeableAccounts = new DenyBook().DeniedList;
-
-
-            List<LicenseManagerDatum> teste = LicenseManagerData.ToList<LicenseManagerDatum>();
 
             foreach (var datum in LicenseManagerData)
             {
-                
+                LicenseManagerDatum removedItem;
 
                 if ( ! this.IsValidAccount(datum.Value ) )
                 {
-                    LicenseManagerData.TryRemove(datum.Key,  );
-                }
-                else
-                {
+                    LicenseManagerData.TryRemove(datum.Key, out removedItem);
                 }
 
             }
@@ -102,5 +94,42 @@ namespace Vtex.Billing.Core.Data
 		{
 			return LicenseManagerData.Where(a => a.Value.MainAccountName.Equals(name)).Select(a => a.Key).FirstOrDefault();
 		}
+
+
+        public void TestGetAllAccounts()
+        {
+            WarmupLicenseManager();
+
+            List<string> lines = new List<string>();
+            
+
+            foreach (var datum in LicenseManagerData)
+            {
+                lines.Add( "ID: " + datum.Value.Id +"   |   MainNameAccount: "+ datum.Value.MainAccountName +"   |  LV:" + datum.Value.LV) ;
+                
+                
+            }
+            System.IO.File.WriteAllLines("C:\\Users\\igMoreira\\Desktop\\teste2.txt", lines.ToArray() );
+            
+        }
+
+        public void TestGetAllChargeableAccount()
+        {
+
+            WarmupLicenseManager();
+            WarmupUnchargeableAccounts();
+
+            List<string> lines = new List<string>();
+
+
+            foreach (var datum in LicenseManagerData)
+            {
+                lines.Add("ID: " + datum.Value.Id + "   |   MainNameAccount: " + datum.Value.MainAccountName + "   |  LV:" + datum.Value.LV);
+
+
+            }
+            System.IO.File.WriteAllLines("C:\\Users\\igMoreira\\Desktop\\teste.txt", lines.ToArray());
+
+        }
 	}
 }

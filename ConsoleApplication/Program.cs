@@ -36,15 +36,8 @@ namespace ConsoleApplication
 
             BillingAccountManager teste = BillingAccountManager.Instance;
 
-            teste.Warmup();
-
-            //foreach (string item in teste.DeniedList)
-            //{
-            //    Console.WriteLine(item.ToString());
-            //}
-
-            Console.ReadLine();
-
+            teste.TestGetAllAccounts();
+            teste.TestGetAllChargeableAccount();
         }
 
     }
